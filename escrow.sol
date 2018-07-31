@@ -7,9 +7,9 @@ contract Escrow {
   enum State { Active, Loaned, Fulfilled }
   struct loan {
     address lender;
-    // min amout to borrow
+    // Minimum value
     uint min;
-    // max amout to borrow
+    // Maximum value
     uint max;
     // duration after which the collateral tokens will be released to the lender
     uint duration;
